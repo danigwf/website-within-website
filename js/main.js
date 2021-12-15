@@ -26,3 +26,15 @@ possibilitiesButton.addEventListener("click", function(){
 
 });
 
+
+const contactButton = document.getElementById("contact-button");
+const contactPage = document.getElementById("contact-page");
+
+contactButton.addEventListener("click", function(){
+    contactPage.scrollIntoView(
+        {behavior: "smooth",
+        }
+
+    );
+
+});
