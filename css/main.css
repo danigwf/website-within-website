@@ -630,7 +630,7 @@ input[type=text], select, textarea {
       color: lightgray;
   }
 
-@media (max-width: 480px) {
+@media (max-width: 450px) {
 
 .main{
     height: 550px;
