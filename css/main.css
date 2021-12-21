@@ -645,6 +645,10 @@ input[type=text], select, textarea {
     left: -2%; 
 }
 
+.dropdown:focus .dropdown-content {
+    display: block;
+}
+
 .dropdown-content {
     left: -2%;
     z-index: 2;
