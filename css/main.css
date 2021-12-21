@@ -1,7 +1,7 @@
 
 
 .header {
-    width: 96%;
+    max-width: 100%;
     padding: 25px;
     background-color: lavender;
     margin: 0px;
@@ -10,6 +10,7 @@
 
 body {
     margin: 0px;
+    max-width: 100%;
 }
 
 
@@ -332,7 +333,7 @@ h2 {
     margin-right: 0px;
     padding: 100px;
     background-color: #FAF6FA;
-    height: 600px;
+    height: 400px;
 }
 
 body {
@@ -359,23 +360,34 @@ body {
     bottom: -30%;
 }
 
-.brands-page button {
+.explore {
     cursor: pointer;
-    position: absolute;
+    position: relative;
+    left: 42%;
+    right: 50%;
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(247,242,247,1) 42%, rgba(230,220,236,1) 75%, rgba(230,220,236,1) 89%, rgba(255,255,255,1) 100%);
-    right: 42%;
-    bottom: -112%;
     padding: 30px;
     font-family: Arial, Helvetica, sans-serif;
     color: lightgray;
     font-size: 15px;
     border: none;
     border-radius: 60px;
+    margin-bottom: 200px;
+    margin-top: 0px;
 }
 
 
 button:hover {
     font-style: italic;
+}
+
+.button-div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+    align-items: center;
+    height: 100px;
+    background-color: #FAF6FA;
 }
 
 
@@ -497,9 +509,6 @@ h3 {
       transform: skewX(-20deg);
     } }
 
-.header2 {
-    padding: 10px;
-}
 
 .image-possibilities {
     display: flex;
@@ -565,11 +574,6 @@ top: 40px;
     z-index: 1;
 }
 
-#blog {
-    position: relative;
-    bottom: 25px;
-   
-}
 
 .contact-page {
     height: 600px;
@@ -630,7 +634,7 @@ input[type=text], select, textarea {
       color: lightgray;
   }
 
-@media (max-width: 660px) {
+@media (max-width: 580px) {
 
 .main{
     height: 550px;
@@ -638,6 +642,11 @@ input[type=text], select, textarea {
 
 .hamburger {
     left: -2%; 
+}
+
+.dropdown-content {
+    left: -2%;
+    z-index: 2;
 }
 
 .web {
@@ -714,9 +723,10 @@ h2 {
     height: 100px;
 }
 
-.brands-page button {
-    bottom: -105%;
-    right: 32%
+.explore {
+    bottom: -95%;
+    right: 60%;
+    left: 30%;
 }
 
 .image-possibilities{
@@ -760,8 +770,12 @@ h2 {
     
 }
 
+.body {
+    max-width: 100%;
+}
+
 .header {
-    width: 90%;
+    max-width: 100%;
 }
 
 }
